@@ -14,6 +14,7 @@ License:	BSD-3-Clause
 Group:		System/Libraries
 BuildRequires:	autoconf automake slibtool
 BuildRequires:	tcl-devel tk-devel
+BuildRequires:	readline-devel
 Requires:	%{libname} = %{EVRD}
 
 %description
