@@ -1,0 +1,27 @@
+Les sous-répertoires tclreadline-2.4.1.orig/aux et tclreadline-2.4.1/aux sont identiques
+diff -u tclreadline-2.4.1.orig/configure.ac tclreadline-2.4.1/configure.ac
+--- tclreadline-2.4.1.orig/configure.ac	2025-02-19 15:49:29.000000000 +0100
++++ tclreadline-2.4.1/configure.ac	2025-08-02 05:37:51.993353572 +0200
+@@ -8,7 +8,7 @@
+ dnl This software is copyright under the BSD license.
+ dnl ---
+ 
+-AC_INIT([tclreadline],[2.4.0])
++AC_INIT([tclreadline],[2.4.1])
+ AC_CONFIG_SRCDIR([tclreadline.c])
+ AC_CONFIG_HEADERS(config.h)
+ AC_PREREQ([2.71])
+@@ -124,9 +124,9 @@
+ if test "${prefix}" = "NONE"; then
+     prefix=$TCL_PREFIX
+ fi
+-TCLRL_LIBDIR="${prefix}/lib"
++TCLRL_LIBDIR="${libdir}"
+ AC_SUBST(TCLRL_LIBDIR)
+-TCLRL_DIR="${TCLRL_LIBDIR}/tclreadline$VERSION"
++TCLRL_DIR="${TCLRL_LIBDIR}/tcl${TCL_VERSION}/tclreadline$VERSION"
+ AC_SUBST(TCLRL_DIR)
+ 
+ # HEADERS
+Seulement dans tclreadline-2.4.1: .configure.ac.swp
+Les sous-répertoires tclreadline-2.4.1.orig/.github et tclreadline-2.4.1/.github sont identiques
